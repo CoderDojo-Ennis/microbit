@@ -1,0 +1,21 @@
+//% color="#A0BBA0" icon="\uf192"
+namespace AdeeptServo {
+
+    //% block="robot arm servo setup"
+    export function servoSetup() {
+        serial.redirect(
+            SerialPin.P12,
+            SerialPin.P13,
+            BaudRate.BaudRate9600
+        )
+        pause(1000);
+    }
+
+    //% block="robot arm servo write index = $index angle = $angle"
+    //% index.defl=1 index.min=1 index.max=5
+    //% angle.defl=90 angle.min=0 angle.max=180
+    export function servoWrite (index: number, angle: number) {
+        serial.writeLine("S" + convertToText(index) + "=" + convertToText(angle) + ";")
+        basic.pause(100)
+    }
+}
