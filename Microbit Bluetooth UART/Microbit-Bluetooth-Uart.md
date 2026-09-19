@@ -1,4 +1,6 @@
 # Microbit Bluetooth UART
+![alt text](https://github.com/CoderDojo-Ennis/microbit/blob/main/images/bluetooth-aurt.png "microbit-bluetooth")
+
 To connect and control the Microbit to bluetooth quickly, we can use bleutooth UART service.
 Using  bleutooth UART service we can send and receive text and data over bluetooth just like a UART serial port. 
 
@@ -20,3 +22,8 @@ Follow this guide on how to use microbit with bluetooth UART
 [Using the micro:bit UART](https://support.microbit.org/support/solutions/articles/19000062330-using-the-micro-bit-bluetooth-low-energy-uart-serial-over-bluetooth-)
 
 ## Controlling microbit stuffs using bluetooth UART
+You can send the text commands from Bluetooth serial terminal App to microbit to control the stuffs in micorobit like lights or robots.
+For example:
+- Send "on" to turn something ON
+- Send "F" to move a robot forward
+- Send "S" to stop something
